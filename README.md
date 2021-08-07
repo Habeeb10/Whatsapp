@@ -1,2 +1,2 @@
 # Whatsapp
-Whatsapp clone for ios
+WhatsApp clone for ios
