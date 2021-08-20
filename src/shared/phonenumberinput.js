@@ -6,28 +6,35 @@ import {
   View,
   TouchableOpacity,
 } from "react-native";
+import Arrowright from "../../assets/svg";
 import * as colors from "../components/common/colors";
 
-export const Numberinput = ({ placeholder, icon, countrycode, label }) => {
+export const Numberinput = ({
+  value,
+  label,
+
+  onPress,
+}) => {
   return (
-    <View>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.line}></View>
       <View style={styles.labelbox}>
-        <Text style={styles.label}>{label}</Text>
-        <TouchableOpacity>{icon}</TouchableOpacity>
+        <Text style={styles.label} value={value}>
+          {label}
+        </Text>
+        <TouchableOpacity style={{ height: 20, width: 1 }}>
+          <Arrowright />
+        </TouchableOpacity>
       </View>
-      <View style={styles.container}>
-        <Text style={styles.countrycode}>{countrycode}</Text>
-        <View style={styles.seperator}></View>
-        <TextInput style={styles.textInput} placeholder={placeholder} />
-      </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   countrycode: {
-    width: 30,
+    width: 40,
+    fontSize: 27,
+    color: colors.gray,
   },
   labelbox: {
     flexDirection: "row",
@@ -66,6 +73,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     marginLeft: 20,
-    fontSize: 20,
+    fontSize: 26,
+    color: colors.gray,
   },
 });

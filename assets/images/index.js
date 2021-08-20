@@ -1,0 +1,10 @@
+export const Andrew = require("./Andrew.png");
+export const Star = require("./star.png");
+export const Web = require("./web.png");
+export const Chat = require("./chat.png");
+export const Account = require("./account.png");
+export const Notification = require("./notification.png");
+export const Data = require("./data.png");
+export const Help = require("./help.png");
+export const Friend = require("./friend.png");
+export const Cameraview = require("./cameraview.png");

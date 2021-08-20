@@ -1,10 +1,7 @@
 import { StyleSheet } from "react-native";
 import * as colors from "../../../components/common/colors";
 
-export const authostyles = StyleSheet.create({
-  textcolor: {
-    color: colors.blue,
-  },
+export const callsstyles = StyleSheet.create({
   countrycode: {
     width: 45,
     fontSize: 18,

@@ -5,14 +5,16 @@ import * as colors from "../common/colors";
 
 export const Container = ({
   children,
-  barColor = colors.grey,
-  backgroundColor,
+  barColor = colors.white,
+  backgroundColor = colors.white,
 }) => {
   return (
     <>
       <StatusBar style={"dark"} />
       <SafeAreaView style={{ backgroundColor: barColor }} />
-      <View style={{ flex: 1, backgroundColor }}>{children}</View>
+      <View style={{ flex: 1, backgroundColor: backgroundColor }}>
+        {children}
+      </View>
     </>
   );
 };
